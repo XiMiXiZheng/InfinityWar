@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cokqrbf70xoek"
-path="res://.godot/imported/TypeA.png-ae73de3b8258e51f62626e187dde91f5.ctex"
+uid="uid://vrq57m5fepak"
+path="res://.godot/imported/眼睛.png-55e49f4bd878fecc910f7ba148c3bfc1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://资源/TypeA.png"
-dest_files=["res://.godot/imported/TypeA.png-ae73de3b8258e51f62626e187dde91f5.ctex"]
+source_file="res://资源/眼睛.png"
+dest_files=["res://.godot/imported/眼睛.png-55e49f4bd878fecc910f7ba148c3bfc1.ctex"]
 
 [params]
 

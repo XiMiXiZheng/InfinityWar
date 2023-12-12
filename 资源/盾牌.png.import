@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vrq57m5fepak"
-path="res://.godot/imported/Skeleton.png-017b0f19ae4fb24888111a347fcd093c.ctex"
+uid="uid://dje85xcxexann"
+path="res://.godot/imported/盾牌.png-a9710c42c170ca177c8c801b0a3c497a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://资源/Skeleton.png"
-dest_files=["res://.godot/imported/Skeleton.png-017b0f19ae4fb24888111a347fcd093c.ctex"]
+source_file="res://资源/盾牌.png"
+dest_files=["res://.godot/imported/盾牌.png-a9710c42c170ca177c8c801b0a3c497a.ctex"]
 
 [params]
 

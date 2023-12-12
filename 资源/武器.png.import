@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b37aeyua1sigu"
-path="res://.godot/imported/LightArmorC.png-2c1fddd29e7116ebf913da26a15be16e.ctex"
+uid="uid://c1x63rher1ull"
+path="res://.godot/imported/武器.png-f5e902f5d4f89b571f51ffc38d0517be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://资源/LightArmorC.png"
-dest_files=["res://.godot/imported/LightArmorC.png-2c1fddd29e7116ebf913da26a15be16e.ctex"]
+source_file="res://资源/武器.png"
+dest_files=["res://.godot/imported/武器.png-f5e902f5d4f89b571f51ffc38d0517be.ctex"]
 
 [params]
 

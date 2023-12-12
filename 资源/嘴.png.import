@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1x63rher1ull"
-path="res://.godot/imported/RustedBroadsword.png-3e1166d026590c85498fec21d2ae2008.ctex"
+uid="uid://cokqrbf70xoek"
+path="res://.godot/imported/嘴.png-cebd625c04009cc22ecee8a44a9c0cc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://资源/RustedBroadsword.png"
-dest_files=["res://.godot/imported/RustedBroadsword.png-3e1166d026590c85498fec21d2ae2008.ctex"]
+source_file="res://资源/嘴.png"
+dest_files=["res://.godot/imported/嘴.png-cebd625c04009cc22ecee8a44a9c0cc3.ctex"]
 
 [params]
 
