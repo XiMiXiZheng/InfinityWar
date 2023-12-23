@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://btplowe0bpbfg"]
+[gd_scene load_steps=8 format=3 uid="uid://btplowe0bpbfg"]
 
 [ext_resource type="Texture2D" uid="uid://cd01s07ko7u38" path="res://资源/骨架.png" id="1_2wa8f"]
+[ext_resource type="Texture2D" uid="uid://dje85xcxexann" path="res://资源/盾牌.png" id="2_6nkt1"]
 [ext_resource type="Texture2D" uid="uid://vrq57m5fepak" path="res://资源/眼睛.png" id="2_g5j6a"]
 [ext_resource type="Texture2D" uid="uid://cokqrbf70xoek" path="res://资源/嘴.png" id="3_6u3w3"]
 [ext_resource type="Texture2D" uid="uid://c1x63rher1ull" path="res://资源/武器.png" id="3_td3wg"]
@@ -9,6 +10,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_2b3or"]
 
 [node name="玩家" type="CharacterBody2D"]
+z_index = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_2b3or")
@@ -17,26 +19,11 @@ shape = SubResource("CircleShape2D_2b3or")
 z_index = 2
 
 [node name="身体" type="Sprite2D" parent="上半身"]
+z_index = 1
 texture = ExtResource("1_2wa8f")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(1166, 496, 69, 109)
-
-[node name="左手" type="Sprite2D" parent="上半身/身体"]
-z_index = -1
-position = Vector2(31, -33)
-texture = ExtResource("1_2wa8f")
-offset = Vector2(-9, 36)
-flip_h = true
-region_enabled = true
-region_rect = Rect2(1303, 516, 43, 97)
-
-[node name="左手掌" type="Sprite2D" parent="上半身/身体/左手"]
-position = Vector2(-6, 81)
-texture = ExtResource("1_2wa8f")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(1066, 747, 36, 26)
 
 [node name="盔甲" type="Sprite2D" parent="上半身/身体"]
 position = Vector2(6, 12)
@@ -44,26 +31,6 @@ texture = ExtResource("4_4oylk")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(1157, 497, 91, 129)
-
-[node name="右手" type="Sprite2D" parent="上半身/身体"]
-position = Vector2(-16, -36)
-texture = ExtResource("1_2wa8f")
-offset = Vector2(-8, 40)
-flip_h = true
-region_enabled = true
-region_rect = Rect2(1065, 515, 43, 98)
-
-[node name="右手掌" type="Sprite2D" parent="上半身/身体/右手"]
-position = Vector2(-3, 73)
-texture = ExtResource("1_2wa8f")
-region_enabled = true
-region_rect = Rect2(1297, 657, 45, 46)
-
-[node name="装备" type="Sprite2D" parent="上半身/身体/右手/右手掌"]
-z_index = -1
-position = Vector2(121, 11)
-rotation = 1.61944
-texture = ExtResource("3_td3wg")
 
 [node name="头" type="Sprite2D" parent="上半身"]
 position = Vector2(0, -47)
@@ -93,6 +60,55 @@ texture = ExtResource("4_4oylk")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(1061, 146, 276, 262)
+
+[node name="左手" type="Sprite2D" parent="上半身"]
+visible = false
+position = Vector2(28, -27)
+scale = Vector2(1, 1)
+texture = ExtResource("1_2wa8f")
+offset = Vector2(-7.8053, 35.9167)
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1303, 516, 43, 97)
+
+[node name="左手掌" type="Sprite2D" parent="上半身/左手"]
+position = Vector2(-5.02482, 79.4058)
+scale = Vector2(1, 1)
+texture = ExtResource("1_2wa8f")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1066, 747, 36, 26)
+
+[node name="左手装备" type="Sprite2D" parent="上半身/左手"]
+z_index = -1
+position = Vector2(9, 45)
+scale = Vector2(1, 1)
+texture = ExtResource("2_6nkt1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(66, 55, 116, 133)
+
+[node name="右手" type="Sprite2D" parent="上半身"]
+z_index = 2
+position = Vector2(-16, -36)
+texture = ExtResource("1_2wa8f")
+offset = Vector2(-8, 40)
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1065, 515, 43, 98)
+
+[node name="右手掌" type="Sprite2D" parent="上半身/右手"]
+position = Vector2(-3, 73)
+texture = ExtResource("1_2wa8f")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1297, 657, 45, 46)
+
+[node name="右手装备" type="Sprite2D" parent="上半身/右手/右手掌"]
+z_index = -1
+position = Vector2(114, 24)
+rotation = 1.70558
+texture = ExtResource("3_td3wg")
 
 [node name="下半身" type="Node2D" parent="."]
 
